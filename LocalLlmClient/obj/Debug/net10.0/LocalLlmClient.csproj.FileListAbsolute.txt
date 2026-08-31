@@ -1,0 +1,12 @@
+C:\Users\Paul\Documents\Repos\TelegramWorker\LocalLlmClient\bin\Debug\net10.0\LocalLlmClient.deps.json
+C:\Users\Paul\Documents\Repos\TelegramWorker\LocalLlmClient\bin\Debug\net10.0\LocalLlmClient.dll
+C:\Users\Paul\Documents\Repos\TelegramWorker\LocalLlmClient\bin\Debug\net10.0\LocalLlmClient.pdb
+C:\Users\Paul\Documents\Repos\TelegramWorker\LocalLlmClient\obj\Debug\net10.0\LocalLlmClient.csproj.AssemblyReference.cache
+C:\Users\Paul\Documents\Repos\TelegramWorker\LocalLlmClient\obj\Debug\net10.0\LocalLlmClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paul\Documents\Repos\TelegramWorker\LocalLlmClient\obj\Debug\net10.0\LocalLlmClient.AssemblyInfoInputs.cache
+C:\Users\Paul\Documents\Repos\TelegramWorker\LocalLlmClient\obj\Debug\net10.0\LocalLlmClient.AssemblyInfo.cs
+C:\Users\Paul\Documents\Repos\TelegramWorker\LocalLlmClient\obj\Debug\net10.0\LocalLlmClient.csproj.CoreCompileInputs.cache
+C:\Users\Paul\Documents\Repos\TelegramWorker\LocalLlmClient\obj\Debug\net10.0\LocalLlmClient.dll
+C:\Users\Paul\Documents\Repos\TelegramWorker\LocalLlmClient\obj\Debug\net10.0\refint\LocalLlmClient.dll
+C:\Users\Paul\Documents\Repos\TelegramWorker\LocalLlmClient\obj\Debug\net10.0\LocalLlmClient.pdb
+C:\Users\Paul\Documents\Repos\TelegramWorker\LocalLlmClient\obj\Debug\net10.0\ref\LocalLlmClient.dll

@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="../LocalAiWorker/LocalAiWorker.csproj" Id="8b3f4d2b-1e5a-4a01-8014-fa277226b389" />
+  <Project Path="../LocalLlmClient/LocalLlmClient.csproj" />
+  <Project Path="../RabbitMqService/RabbitMqService.csproj" Id="20244b1c-beab-4160-87a3-976b1364b000" />
+  <Project Path="../TelegramClient/TelegramClient.csproj" />
+  <Project Path="TelegramWorker.csproj" />
+</Solution>

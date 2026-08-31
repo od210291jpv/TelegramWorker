@@ -1,0 +1,1 @@
+using System; using System.Threading.Tasks; using TL; class C { async Task M(WTelegram.Client c) { var dialogs = await c.Messages_GetDialogs(offset_date: 0, offset_id: 0, offset_peer: new InputPeerEmpty(), limit: 100, hash: 0); } }

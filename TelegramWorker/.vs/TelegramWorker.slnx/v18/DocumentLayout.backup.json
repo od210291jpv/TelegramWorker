@@ -1,0 +1,138 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\TelegramWorker\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4FFCF672-7DF7-0948-60AD-41C9C6BCB057}|TelegramWorker.csproj|c:\\users\\paul\\documents\\repos\\telegramworker\\telegramworker\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FFCF672-7DF7-0948-60AD-41C9C6BCB057}|TelegramWorker.csproj|solutionrelative:worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D187284-0D94-25ED-4C25-EEBD57D6D428}|..\\TelegramClient\\TelegramClient.csproj|c:\\users\\paul\\documents\\repos\\telegramworker\\telegramclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D187284-0D94-25ED-4C25-EEBD57D6D428}|..\\TelegramClient\\TelegramClient.csproj|c:\\users\\paul\\documents\\repos\\telegramworker\\telegramclient\\services\\telegramservice\\itelegramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D187284-0D94-25ED-4C25-EEBD57D6D428}|..\\TelegramClient\\TelegramClient.csproj|c:\\users\\paul\\documents\\repos\\telegramworker\\telegramclient\\services\\telegramservice\\telegramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FFCF672-7DF7-0948-60AD-41C9C6BCB057}|TelegramWorker.csproj|c:\\users\\paul\\documents\\repos\\telegramworker\\telegramworker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FFCF672-7DF7-0948-60AD-41C9C6BCB057}|TelegramWorker.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B3F4D2B-1E5A-4A01-8014-FA277226B389}|..\\LocalAiWorker\\LocalAiWorker.csproj|c:\\users\\paul\\documents\\repos\\telegramworker\\localaiworker\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20244B1C-BEAB-4160-87A3-976B1364B000}|..\\RabbitMqService\\RabbitMqService.csproj|c:\\users\\paul\\documents\\repos\\telegramworker\\rabbitmqservice\\rabbitmqservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\TelegramClient\\Program.cs",
+              "RelativeDocumentMoniker": "..\\TelegramClient\\Program.cs",
+              "ToolTip": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\TelegramClient\\Program.cs",
+              "RelativeToolTip": "..\\TelegramClient\\Program.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAgwDQAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-28T21:47:35.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ITelegramService.cs",
+              "DocumentMoniker": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\TelegramClient\\Services\\TelegramService\\ITelegramService.cs",
+              "RelativeDocumentMoniker": "..\\TelegramClient\\Services\\TelegramService\\ITelegramService.cs",
+              "ToolTip": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\TelegramClient\\Services\\TelegramService\\ITelegramService.cs",
+              "RelativeToolTip": "..\\TelegramClient\\Services\\TelegramService\\ITelegramService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowBsAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-28T21:41:31.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TelegramService.cs",
+              "DocumentMoniker": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\TelegramClient\\Services\\TelegramService\\TelegramService.cs",
+              "RelativeDocumentMoniker": "..\\TelegramClient\\Services\\TelegramService\\TelegramService.cs",
+              "ToolTip": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\TelegramClient\\Services\\TelegramService\\TelegramService.cs",
+              "RelativeToolTip": "..\\TelegramClient\\Services\\TelegramService\\TelegramService.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAjwDsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-28T21:40:46.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\TelegramWorker\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\TelegramWorker\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-28T21:40:30.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Worker.cs",
+              "DocumentMoniker": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\LocalAiWorker\\Worker.cs",
+              "RelativeDocumentMoniker": "..\\LocalAiWorker\\Worker.cs",
+              "ToolTip": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\LocalAiWorker\\Worker.cs",
+              "RelativeToolTip": "..\\LocalAiWorker\\Worker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-28T21:26:03.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RabbitMqService.cs",
+              "DocumentMoniker": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\RabbitMqService\\RabbitMqService.cs",
+              "RelativeDocumentMoniker": "..\\RabbitMqService\\RabbitMqService.cs",
+              "ToolTip": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\RabbitMqService\\RabbitMqService.cs",
+              "RelativeToolTip": "..\\RabbitMqService\\RabbitMqService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-28T21:22:59.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Worker.cs",
+              "DocumentMoniker": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\TelegramWorker\\Worker.cs",
+              "RelativeDocumentMoniker": "Worker.cs",
+              "ToolTip": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\TelegramWorker\\Worker.cs",
+              "RelativeToolTip": "Worker.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAiwBsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-28T21:18:23.23Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

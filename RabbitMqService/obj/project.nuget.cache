@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "/D9HAt0CRpo=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\RabbitMqService\\RabbitMqService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Paul\\.nuget\\packages\\rabbitmq.client\\7.2.2\\rabbitmq.client.7.2.2.nupkg.sha512",
+    "C:\\Users\\Paul\\.nuget\\packages\\system.threading.ratelimiting\\8.0.0\\system.threading.ratelimiting.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

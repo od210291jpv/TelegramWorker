@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "jZt7puW+L9Q=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\TelegramClient\\TelegramClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Paul\\.nuget\\packages\\wtelegramclient\\4.4.8\\wtelegramclient.4.4.8.nupkg.sha512"
+  ],
+  "logs": []
+}
