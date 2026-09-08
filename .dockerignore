@@ -1,0 +1,5 @@
+# Exclude build output and NuGet caches that contain Windows-specific paths
+**/bin/
+**/obj/
+**/.vs/
+**/.git/

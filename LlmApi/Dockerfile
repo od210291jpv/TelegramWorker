@@ -13,7 +13,7 @@ COPY LocalLlmClient/ LocalLlmClient/
 COPY LlmApi/ LlmApi/
 
 # Publish the API
-RUN dotnet publish LlmApi/LlmApi.csproj -c Release -o /app/publish --no-restore
+RUN dotnet publish LlmApi/LlmApi.csproj -c Release -o /app/publish
 
 # Runtime stage
 FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS runtime
