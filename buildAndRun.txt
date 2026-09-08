@@ -1,0 +1,2 @@
+docker build -f LlmApi/Dockerfile -t llm-api .
+docker run -d --name llm-api -p 8080:8080 -e LocalLlm__EndpointUrl="http://host.docker.internal:11434" -e LocalLlm__ModelId="gemma4:e2b" -e LocalLlm__ApiKey="no-key" -e LocalLlm__TimeoutMinutes="15" -e LocalLlm__SystemMessage="" llm-api
