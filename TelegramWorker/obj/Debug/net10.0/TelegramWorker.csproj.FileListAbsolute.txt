@@ -50,3 +50,14 @@ C:\Users\Paul\Documents\Repos\TelegramWorker\TelegramWorker\obj\Debug\net10.0\re
 C:\Users\Paul\Documents\Repos\TelegramWorker\TelegramWorker\obj\Debug\net10.0\TelegramWorker.pdb
 C:\Users\Paul\Documents\Repos\TelegramWorker\TelegramWorker\obj\Debug\net10.0\TelegramWorker.genruntimeconfig.cache
 C:\Users\Paul\Documents\Repos\TelegramWorker\TelegramWorker\obj\Debug\net10.0\ref\TelegramWorker.dll
+C:\Users\Paul\Documents\Repos\TelegramWorker\TelegramWorker\bin\Debug\net10.0\TelegramClient.deps.json
+C:\Users\Paul\Documents\Repos\TelegramWorker\TelegramWorker\bin\Debug\net10.0\TelegramClient.runtimeconfig.json
+C:\Users\Paul\Documents\Repos\TelegramWorker\TelegramWorker\bin\Debug\net10.0\TelegramClient.exe
+C:\Users\Paul\Documents\Repos\TelegramWorker\TelegramWorker\bin\Debug\net10.0\RabbitMQ.Client.dll
+C:\Users\Paul\Documents\Repos\TelegramWorker\TelegramWorker\bin\Debug\net10.0\System.Threading.RateLimiting.dll
+C:\Users\Paul\Documents\Repos\TelegramWorker\TelegramWorker\bin\Debug\net10.0\WTelegramClient.dll
+C:\Users\Paul\Documents\Repos\TelegramWorker\TelegramWorker\bin\Debug\net10.0\RabbitMqService.dll
+C:\Users\Paul\Documents\Repos\TelegramWorker\TelegramWorker\bin\Debug\net10.0\TelegramClient.dll
+C:\Users\Paul\Documents\Repos\TelegramWorker\TelegramWorker\bin\Debug\net10.0\RabbitMqService.pdb
+C:\Users\Paul\Documents\Repos\TelegramWorker\TelegramWorker\bin\Debug\net10.0\TelegramClient.pdb
+C:\Users\Paul\Documents\Repos\TelegramWorker\TelegramWorker\obj\Debug\net10.0\TelegramWorker.sourcelink.json

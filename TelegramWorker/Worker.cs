@@ -99,5 +99,5 @@ public class Worker(ILogger<Worker> logger, ITelegramService telegram) : Backgro
         //        Console.WriteLine($"❓ [Other Media Type: {msg.media.GetType().Name}] - {msg.message}");
         //        break;
         }
-    }
 }
+

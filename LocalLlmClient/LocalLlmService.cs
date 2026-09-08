@@ -1,18 +1,19 @@
+using Azure.Core;
+using Microsoft.SemanticKernel;
+using Microsoft.SemanticKernel.ChatCompletion;
+using Microsoft.SemanticKernel.Connectors.OpenAI;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
-using Microsoft.SemanticKernel;
-using Microsoft.SemanticKernel.ChatCompletion;
-using Microsoft.SemanticKernel.Connectors.OpenAI;
 
 namespace LocalLlmClient
 {
     public partial class LocalLlmService : ILocalLlmService
     {
-        private readonly LocalLlmOptions _options;
+        private readonly LocalLlmOptions _options = new LocalLlmOptions();
         private string _currentModelId;
         
         private Kernel _kernel;
@@ -20,9 +21,8 @@ namespace LocalLlmClient
         private ChatHistory _chatHistory;
         private readonly HttpClient _httpClient;
 
-        public LocalLlmService(LocalLlmOptions options)
+        public LocalLlmService()
         {
-            _options = options ?? throw new ArgumentNullException(nameof(options));
             _currentModelId = _options.ModelId;
 
             var endpointUrl = _options.EndpointUrl.TrimEnd('/');
@@ -68,10 +68,10 @@ namespace LocalLlmClient
             _kernel.Plugins.AddFromObject(toolInstance, toolName);
         }
 
-        public async Task<List<string>> GetModelsAsync(CancellationToken cancellationToken = default)
+        public async Task<string> GetModelsAsync(CancellationToken cancellationToken = default)
         {
             var endpointUrl = _options.EndpointUrl.TrimEnd('/');
-            var request = new HttpRequestMessage(HttpMethod.Get, $"{endpointUrl}/models");
+            var request = new HttpRequestMessage(HttpMethod.Get, $"{endpointUrl}/api/tags");
             
             if (!string.IsNullOrEmpty(_options.ApiKey) && _options.ApiKey != "no-key")
             {
@@ -81,22 +81,8 @@ namespace LocalLlmClient
             var response = await _httpClient.SendAsync(request, cancellationToken);
             response.EnsureSuccessStatusCode();
 
-            var json = await response.Content.ReadAsStringAsync(cancellationToken);
-            using var doc = JsonDocument.Parse(json);
-            
-            var models = new List<string>();
-            if (doc.RootElement.TryGetProperty("data", out var dataElement) && dataElement.ValueKind == JsonValueKind.Array)
-            {
-                foreach (var item in dataElement.EnumerateArray())
-                {
-                    if (item.TryGetProperty("id", out var idElement))
-                    {
-                        models.Add(idElement.GetString());
-                    }
-                }
-            }
-            
-            return models;
+            var content = await response.Content.ReadAsStringAsync();
+            return content;            
         }
 
         private OpenAIPromptExecutionSettings GetToolExecutionSettings()
@@ -122,15 +108,36 @@ namespace LocalLlmClient
             return response.Content;
         }
 
-        public async Task<string> SendMessageWithImageAsync(string message, string imageUrl, CancellationToken cancellationToken = default)
+        public async Task<string> SendMessageWithImageAsync(MessageDto message, string? imageUrl = null, CancellationToken cancellationToken = default)
         {
-            var items = new ChatMessageContentItemCollection
+            //var items = new ChatMessageContentItemCollection
+            //{
+            //    new TextContent(message.Message),
+            //    new ImageContent(new Uri(imageUrl))
+            //};
+
+            if (!string.IsNullOrWhiteSpace(message.Base64Image))
             {
-                new TextContent(message),
-                new ImageContent(new Uri(imageUrl))
-            };
-            
-            _chatHistory.Add(new ChatMessageContent(AuthorRole.User, items));
+                var messageItems = new ChatMessageContentItemCollection { new TextContent(message.Message) };
+                try
+                {
+                    byte[] imageBytes = Convert.FromBase64String(message.Base64Image);
+                    string mimeType = !string.IsNullOrWhiteSpace(message.MimeType) ? message.MimeType : "image/jpeg";
+
+                    messageItems.Add(new ImageContent(imageBytes, mimeType));
+                    _chatHistory.Add(new ChatMessageContent(AuthorRole.User, message.Message) { Items = messageItems });
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception($"Unable to process the uploaded image: {ex.Message}");
+                }
+            }
+            else
+            {
+                _chatHistory.AddUserMessage(message.Message);
+            }
+
+            //_chatHistory.Add(new ChatMessageContent(AuthorRole.User, items));
             
             var response = await _chatCompletionService.GetChatMessageContentAsync(
                 _chatHistory, 

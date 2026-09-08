@@ -4,10 +4,14 @@ namespace LocalLlmClient
     {
         public const string SectionName = "LocalLlm";
 
-        public string EndpointUrl { get; set; } = "http://127.0.0.1:1234/v1";
-        public string ModelId { get; set; } = "local-model";
+        public string EndpointUrl { get; set; } = "http://192.168.88.68:11434";
+
+        public string ModelId { get; set; } = "qwen2.5:1.5b";
+
         public string ApiKey { get; set; } = "no-key";
+
         public int TimeoutMinutes { get; set; } = 10;
-        public string SystemMessage { get; set; } = "You are a helpful AI assistant.";
+
+        public string SystemMessage { get; set; } = "";
     }
 }

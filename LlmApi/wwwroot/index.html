@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LlmApi Tester</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --surface-color: #1e1e1e;
+            --primary-color: #bb86fc;
+            --text-color: #e0e0e0;
+            --border-color: #333;
+            --success-color: #03dac6;
+            --error-color: #cf6679;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 0.75rem;
+            background-color: #2c2c2c;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            color: var(--text-color);
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+
+        input[type="file"] {
+            margin-bottom: 0.5rem;
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: #000;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        button:hover {
+            background-color: #9965f4;
+        }
+        
+        button:active {
+            transform: scale(0.98);
+        }
+
+        .response {
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: #000;
+            border-radius: 4px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            min-height: 20px;
+        }
+        
+        .loading {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>LlmApi Tester</h1>
+
+    <!-- GET /models -->
+    <div class="card" id="getModelsCard">
+        <h2>Get Models (GET /models)</h2>
+        <button onclick="getModels()">Fetch Models</button>
+        <div class="response" id="modelsResponse">Response will appear here...</div>
+    </div>
+
+    <!-- POST /model -->
+    <div class="card" id="setModelCard">
+        <h2>Set Model (POST /model)</h2>
+        <div class="form-group">
+            <label for="modelId">Model ID</label>
+            <input type="text" id="modelId" placeholder="Enter Model ID">
+        </div>
+        <button onclick="setModel()">Set Model</button>
+        <div class="response" id="setModelResponse">Response will appear here...</div>
+    </div>
+
+    <!-- POST /message -->
+    <div class="card" id="sendMessageCard">
+        <h2>Send Message (POST /message)</h2>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="Enter your message"></textarea>
+        </div>
+        <button onclick="sendMessage()">Send</button>
+        <div class="response" id="messageResponse">Response will appear here...</div>
+    </div>
+
+    <!-- POST /image-message -->
+    <div class="card" id="sendImageMessageCard">
+        <h2>Send Image Message (POST /image-message)</h2>
+        <div class="form-group">
+            <label for="imgMessage">Message</label>
+            <textarea id="imgMessage" rows="2" placeholder="Enter your message"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="imageUrl">Image URL (Optional if using file)</label>
+            <input type="text" id="imageUrl" placeholder="http://example.com/image.jpg">
+        </div>
+        <div class="form-group">
+            <label>Or Upload Image (Base64)</label>
+            <input type="file" id="imageFile" accept="image/*" onchange="encodeImageFileAsURL(this)">
+            <input type="hidden" id="base64Result">
+            <input type="hidden" id="mimeTypeResult">
+        </div>
+        <button onclick="sendImageMessage()">Send Image Message</button>
+        <div class="response" id="imageMessageResponse">Response will appear here...</div>
+    </div>
+</div>
+
+<script>
+    const baseUrl = window.location.origin;
+
+    function setResponse(elementId, text, isError = false) {
+        const el = document.getElementById(elementId);
+        el.textContent = typeof text === 'object' ? JSON.stringify(text, null, 2) : text;
+        el.style.color = isError ? 'var(--error-color)' : 'var(--text-color)';
+    }
+
+    async function getModels() {
+        try {
+            document.getElementById('getModelsCard').classList.add('loading');
+            setResponse('modelsResponse', 'Loading...');
+            const res = await fetch(`${baseUrl}/models`);
+            if (res.ok) {
+                const data = await res.json();
+                setResponse('modelsResponse', data);
+            } else {
+                setResponse('modelsResponse', `Error: ${res.status} ${res.statusText}`, true);
+            }
+        } catch (error) {
+            setResponse('modelsResponse', error.toString(), true);
+        } finally {
+            document.getElementById('getModelsCard').classList.remove('loading');
+        }
+    }
+
+    async function setModel() {
+        const modelId = document.getElementById('modelId').value;
+        if (!modelId) {
+            setResponse('setModelResponse', 'Please enter a Model ID', true);
+            return;
+        }
+        
+        try {
+            document.getElementById('setModelCard').classList.add('loading');
+            setResponse('setModelResponse', 'Loading...');
+            const res = await fetch(`${baseUrl}/model`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(modelId)
+            });
+            if (res.ok) {
+                setResponse('setModelResponse', 'Success: Model set.');
+            } else {
+                setResponse('setModelResponse', `Error: ${res.status} ${res.statusText}`, true);
+            }
+        } catch (error) {
+            setResponse('setModelResponse', error.toString(), true);
+        } finally {
+            document.getElementById('setModelCard').classList.remove('loading');
+        }
+    }
+
+    async function sendMessage() {
+        const msg = document.getElementById('message').value;
+        if (!msg) {
+            setResponse('messageResponse', 'Please enter a message', true);
+            return;
+        }
+
+        try {
+            document.getElementById('sendMessageCard').classList.add('loading');
+            setResponse('messageResponse', 'Loading...');
+            const url = new URL(`${baseUrl}/message`);
+            url.searchParams.append('message', msg);
+
+            const res = await fetch(url, { method: 'POST' });
+            if (res.ok) {
+                const data = await res.text();
+                setResponse('messageResponse', data);
+            } else {
+                setResponse('messageResponse', `Error: ${res.status} ${res.statusText}`, true);
+            }
+        } catch (error) {
+            setResponse('messageResponse', error.toString(), true);
+        } finally {
+            document.getElementById('sendMessageCard').classList.remove('loading');
+        }
+    }
+
+    function encodeImageFileAsURL(element) {
+        var file = element.files[0];
+        if (file) {
+            var reader = new FileReader();
+            reader.onloadend = function() {
+                // reader.result contains data:image/jpeg;base64,...
+                const b64 = reader.result;
+                const matches = b64.match(/^data:(.*?);base64,(.*)$/);
+                if (matches && matches.length === 3) {
+                    document.getElementById('mimeTypeResult').value = matches[1];
+                    document.getElementById('base64Result').value = matches[2];
+                }
+            }
+            reader.readAsDataURL(file);
+        }
+    }
+
+    async function sendImageMessage() {
+        const msg = document.getElementById('imgMessage').value;
+        const imageUrl = document.getElementById('imageUrl').value;
+        const base64Image = document.getElementById('base64Result').value;
+        const mimeType = document.getElementById('mimeTypeResult').value;
+
+        if (!msg) {
+            setResponse('imageMessageResponse', 'Please enter a message', true);
+            return;
+        }
+
+        try {
+            document.getElementById('sendImageMessageCard').classList.add('loading');
+            setResponse('imageMessageResponse', 'Loading...');
+            
+            const url = new URL(`${baseUrl}/image-message`);
+            if (imageUrl) {
+                url.searchParams.append('imageUrl', imageUrl);
+            }
+
+            const bodyDto = {
+                message: msg,
+                base64Image: base64Image || null,
+                mimeType: mimeType || null
+            };
+
+            const res = await fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(bodyDto)
+            });
+            
+            if (res.ok) {
+                const data = await res.text(); // Assuming text or JSON
+                setResponse('imageMessageResponse', data);
+            } else {
+                setResponse('imageMessageResponse', `Error: ${res.status} ${res.statusText}`, true);
+            }
+        } catch (error) {
+            setResponse('imageMessageResponse', error.toString(), true);
+        } finally {
+            document.getElementById('sendImageMessageCard').classList.remove('loading');
+        }
+    }
+</script>
+
+</body>
+</html>

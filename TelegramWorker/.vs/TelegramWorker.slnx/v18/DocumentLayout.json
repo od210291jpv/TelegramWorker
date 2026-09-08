@@ -3,27 +3,34 @@
   "WorkspaceRootPath": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\TelegramWorker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4FFCF672-7DF7-0948-60AD-41C9C6BCB057}|TelegramWorker.csproj|c:\\users\\paul\\documents\\repos\\telegramworker\\telegramworker\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FFCF672-7DF7-0948-60AD-41C9C6BCB057}|TelegramWorker.csproj|solutionrelative:worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78AB8FD9-B086-4D77-7F89-6096E6706907}|..\\LocalLlmClient\\LocalLlmClient.csproj|c:\\users\\paul\\documents\\repos\\telegramworker\\localllmclient\\localllmoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D187284-0D94-25ED-4C25-EEBD57D6D428}|..\\TelegramClient\\TelegramClient.csproj|c:\\users\\paul\\documents\\repos\\telegramworker\\telegramclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A7A0CD9-8DC2-4D62-8F78-279E2EBE1392}|..\\LlmApi\\LlmApi.csproj|c:\\users\\paul\\documents\\repos\\telegramworker\\llmapi\\controllers\\llmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D187284-0D94-25ED-4C25-EEBD57D6D428}|..\\TelegramClient\\TelegramClient.csproj|c:\\users\\paul\\documents\\repos\\telegramworker\\telegramclient\\services\\telegramservice\\itelegramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78AB8FD9-B086-4D77-7F89-6096E6706907}|..\\LocalLlmClient\\LocalLlmClient.csproj|c:\\users\\paul\\documents\\repos\\telegramworker\\localllmclient\\messagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D187284-0D94-25ED-4C25-EEBD57D6D428}|..\\TelegramClient\\TelegramClient.csproj|c:\\users\\paul\\documents\\repos\\telegramworker\\telegramclient\\services\\telegramservice\\telegramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78AB8FD9-B086-4D77-7F89-6096E6706907}|..\\LocalLlmClient\\LocalLlmClient.csproj|c:\\users\\paul\\documents\\repos\\telegramworker\\localllmclient\\localllmservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FFCF672-7DF7-0948-60AD-41C9C6BCB057}|TelegramWorker.csproj|c:\\users\\paul\\documents\\repos\\telegramworker\\telegramworker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FFCF672-7DF7-0948-60AD-41C9C6BCB057}|TelegramWorker.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78AB8FD9-B086-4D77-7F89-6096E6706907}|..\\LocalLlmClient\\LocalLlmClient.csproj|c:\\users\\paul\\documents\\repos\\telegramworker\\localllmclient\\ilocalllmservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8B3F4D2B-1E5A-4A01-8014-FA277226B389}|..\\LocalAiWorker\\LocalAiWorker.csproj|c:\\users\\paul\\documents\\repos\\telegramworker\\localaiworker\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A7A0CD9-8DC2-4D62-8F78-279E2EBE1392}|..\\LlmApi\\LlmApi.csproj|c:\\users\\paul\\documents\\repos\\telegramworker\\llmapi\\llmapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20244B1C-BEAB-4160-87A3-976B1364B000}|..\\RabbitMqService\\RabbitMqService.csproj|c:\\users\\paul\\documents\\repos\\telegramworker\\rabbitmqservice\\rabbitmqservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A7A0CD9-8DC2-4D62-8F78-279E2EBE1392}|..\\LlmApi\\LlmApi.csproj|c:\\users\\paul\\documents\\repos\\telegramworker\\llmapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78AB8FD9-B086-4D77-7F89-6096E6706907}|..\\LocalLlmClient\\LocalLlmClient.csproj|c:\\users\\paul\\documents\\repos\\telegramworker\\localllmclient\\appsettings.example.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78AB8FD9-B086-4D77-7F89-6096E6706907}|..\\LocalLlmClient\\LocalLlmClient.csproj|c:\\users\\paul\\documents\\repos\\telegramworker\\localllmclient\\openaiendpointhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78AB8FD9-B086-4D77-7F89-6096E6706907}|..\\LocalLlmClient\\LocalLlmClient.csproj|c:\\users\\paul\\documents\\repos\\telegramworker\\localllmclient\\test2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,7 +40,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -41,93 +48,132 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\TelegramClient\\Program.cs",
-              "RelativeDocumentMoniker": "..\\TelegramClient\\Program.cs",
-              "ToolTip": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\TelegramClient\\Program.cs",
-              "RelativeToolTip": "..\\TelegramClient\\Program.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAgwEgAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T21:47:35.814Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ITelegramService.cs",
-              "DocumentMoniker": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\TelegramClient\\Services\\TelegramService\\ITelegramService.cs",
-              "RelativeDocumentMoniker": "..\\TelegramClient\\Services\\TelegramService\\ITelegramService.cs",
-              "ToolTip": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\TelegramClient\\Services\\TelegramService\\ITelegramService.cs",
-              "RelativeToolTip": "..\\TelegramClient\\Services\\TelegramService\\ITelegramService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAowBwAAAAcAAAAAAAAAA==",
+              "Title": "MessageDto.cs",
+              "DocumentMoniker": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\LocalLlmClient\\MessageDto.cs",
+              "RelativeDocumentMoniker": "..\\LocalLlmClient\\MessageDto.cs",
+              "ToolTip": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\LocalLlmClient\\MessageDto.cs",
+              "RelativeToolTip": "..\\LocalLlmClient\\MessageDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T21:41:31.01Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TelegramService.cs",
-              "DocumentMoniker": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\TelegramClient\\Services\\TelegramService\\TelegramService.cs",
-              "RelativeDocumentMoniker": "..\\TelegramClient\\Services\\TelegramService\\TelegramService.cs",
-              "ToolTip": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\TelegramClient\\Services\\TelegramService\\TelegramService.cs",
-              "RelativeToolTip": "..\\TelegramClient\\Services\\TelegramService\\TelegramService.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAjwDsAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T21:40:46.989Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\TelegramWorker\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\TelegramWorker\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T21:40:30.978Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Worker.cs",
-              "DocumentMoniker": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\LocalAiWorker\\Worker.cs",
-              "RelativeDocumentMoniker": "..\\LocalAiWorker\\Worker.cs",
-              "ToolTip": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\LocalAiWorker\\Worker.cs",
-              "RelativeToolTip": "..\\LocalAiWorker\\Worker.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T21:26:03.014Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "RabbitMqService.cs",
-              "DocumentMoniker": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\RabbitMqService\\RabbitMqService.cs",
-              "RelativeDocumentMoniker": "..\\RabbitMqService\\RabbitMqService.cs",
-              "ToolTip": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\RabbitMqService\\RabbitMqService.cs",
-              "RelativeToolTip": "..\\RabbitMqService\\RabbitMqService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T21:22:59.027Z",
+              "WhenOpened": "2026-08-31T11:16:57.605Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Worker.cs",
-              "DocumentMoniker": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\TelegramWorker\\Worker.cs",
-              "RelativeDocumentMoniker": "Worker.cs",
-              "ToolTip": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\TelegramWorker\\Worker.cs",
-              "RelativeToolTip": "Worker.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAAwDUAAAAVAAAAAAAAAA==",
+              "Title": "LocalLlmOptions.cs",
+              "DocumentMoniker": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\LocalLlmClient\\LocalLlmOptions.cs",
+              "RelativeDocumentMoniker": "..\\LocalLlmClient\\LocalLlmOptions.cs",
+              "ToolTip": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\LocalLlmClient\\LocalLlmOptions.cs",
+              "RelativeToolTip": "..\\LocalLlmClient\\LocalLlmOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T21:18:23.23Z",
+              "WhenOpened": "2026-08-31T10:38:33.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LocalLlmService.cs",
+              "DocumentMoniker": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\LocalLlmClient\\LocalLlmService.cs",
+              "RelativeDocumentMoniker": "..\\LocalLlmClient\\LocalLlmService.cs",
+              "ToolTip": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\LocalLlmClient\\LocalLlmService.cs",
+              "RelativeToolTip": "..\\LocalLlmClient\\LocalLlmService.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAewH4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-31T10:37:57.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "test2.cs",
+              "DocumentMoniker": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\LocalLlmClient\\test2.cs",
+              "RelativeDocumentMoniker": "..\\LocalLlmClient\\test2.cs",
+              "ToolTip": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\LocalLlmClient\\test2.cs",
+              "RelativeToolTip": "..\\LocalLlmClient\\test2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-31T10:37:51.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.example.json",
+              "DocumentMoniker": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\LocalLlmClient\\appsettings.example.json",
+              "RelativeDocumentMoniker": "..\\LocalLlmClient\\appsettings.example.json",
+              "ToolTip": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\LocalLlmClient\\appsettings.example.json",
+              "RelativeToolTip": "..\\LocalLlmClient\\appsettings.example.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-31T10:32:14.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ILocalLlmService.cs",
+              "DocumentMoniker": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\LocalLlmClient\\ILocalLlmService.cs",
+              "RelativeDocumentMoniker": "..\\LocalLlmClient\\ILocalLlmService.cs",
+              "ToolTip": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\LocalLlmClient\\ILocalLlmService.cs",
+              "RelativeToolTip": "..\\LocalLlmClient\\ILocalLlmService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-31T10:31:03.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\LlmApi\\Program.cs",
+              "RelativeDocumentMoniker": "..\\LlmApi\\Program.cs",
+              "ToolTip": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\LlmApi\\Program.cs",
+              "RelativeToolTip": "..\\LlmApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-31T10:25:45.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LlmController.cs",
+              "DocumentMoniker": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\LlmApi\\Controllers\\LlmController.cs",
+              "RelativeDocumentMoniker": "..\\LlmApi\\Controllers\\LlmController.cs",
+              "ToolTip": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\LlmApi\\Controllers\\LlmController.cs",
+              "RelativeToolTip": "..\\LlmApi\\Controllers\\LlmController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAUwCYAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-31T10:27:50.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LlmApi",
+              "DocumentMoniker": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\LlmApi\\LlmApi.csproj",
+              "RelativeDocumentMoniker": "..\\LlmApi\\LlmApi.csproj",
+              "ToolTip": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\LlmApi\\LlmApi.csproj",
+              "RelativeToolTip": "..\\LlmApi\\LlmApi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-08-31T10:40:57.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OpenAIEndpointHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\LocalLlmClient\\OpenAIEndpointHandler.cs",
+              "RelativeDocumentMoniker": "..\\LocalLlmClient\\OpenAIEndpointHandler.cs",
+              "ToolTip": "C:\\Users\\Paul\\Documents\\Repos\\TelegramWorker\\LocalLlmClient\\OpenAIEndpointHandler.cs",
+              "RelativeToolTip": "..\\LocalLlmClient\\OpenAIEndpointHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-31T10:37:55.498Z",
               "EditorCaption": ""
             }
           ]

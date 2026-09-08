@@ -1,0 +1,13 @@
+C:\Users\Paul\Documents\Repos\TelegramWorker\RabbitMqService\bin\Debug\net10.0\RabbitMqService.deps.json
+C:\Users\Paul\Documents\Repos\TelegramWorker\RabbitMqService\bin\Debug\net10.0\RabbitMqService.dll
+C:\Users\Paul\Documents\Repos\TelegramWorker\RabbitMqService\bin\Debug\net10.0\RabbitMqService.pdb
+C:\Users\Paul\Documents\Repos\TelegramWorker\RabbitMqService\obj\Debug\net10.0\RabbitMqService.csproj.AssemblyReference.cache
+C:\Users\Paul\Documents\Repos\TelegramWorker\RabbitMqService\obj\Debug\net10.0\RabbitMqService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paul\Documents\Repos\TelegramWorker\RabbitMqService\obj\Debug\net10.0\RabbitMqService.AssemblyInfoInputs.cache
+C:\Users\Paul\Documents\Repos\TelegramWorker\RabbitMqService\obj\Debug\net10.0\RabbitMqService.AssemblyInfo.cs
+C:\Users\Paul\Documents\Repos\TelegramWorker\RabbitMqService\obj\Debug\net10.0\RabbitMqService.csproj.CoreCompileInputs.cache
+C:\Users\Paul\Documents\Repos\TelegramWorker\RabbitMqService\obj\Debug\net10.0\RabbitMqService.sourcelink.json
+C:\Users\Paul\Documents\Repos\TelegramWorker\RabbitMqService\obj\Debug\net10.0\RabbitMqService.dll
+C:\Users\Paul\Documents\Repos\TelegramWorker\RabbitMqService\obj\Debug\net10.0\refint\RabbitMqService.dll
+C:\Users\Paul\Documents\Repos\TelegramWorker\RabbitMqService\obj\Debug\net10.0\RabbitMqService.pdb
+C:\Users\Paul\Documents\Repos\TelegramWorker\RabbitMqService\obj\Debug\net10.0\ref\RabbitMqService.dll
